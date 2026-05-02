@@ -210,6 +210,7 @@ h3 {
 .hero-copy p,
 .section-heading p,
 .glass-card p,
+.profile-quote p,
 .project-content p,
 .timeline-item p,
 .contact-card p {
@@ -431,6 +432,28 @@ pre {
   font-size: 1.25rem;
 }
 
+.profile-quote {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  max-width: 980px;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(14px);
+}
+
+.profile-quote i {
+  color: var(--accent-2);
+  font-size: 1.3rem;
+}
+
+.profile-quote p {
+  margin-bottom: 0;
+}
+
 .skills-board {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -448,6 +471,14 @@ pre {
   align-items: center;
   gap: 10px;
   font-weight: 900;
+}
+
+.skill-line em {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
 }
 
 .skill-line b {
@@ -621,7 +652,7 @@ pre {
 
 .timeline {
   position: relative;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .timeline-item {
@@ -641,6 +672,10 @@ pre {
   text-transform: uppercase;
 }
 
+.timeline-item strong {
+  color: var(--text);
+}
+
 .contact-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -656,6 +691,24 @@ pre {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 12px;
+}
+
+.contact-info {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info i {
+  color: var(--accent-2);
 }
 
 .footer {
