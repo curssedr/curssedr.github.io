@@ -3,249 +3,260 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kayki Marques | Portfólio Web & TI</title>
-  <meta name="description" content="Portfólio de Kayki Marques, estudante de TI com foco em desenvolvimento web, suporte técnico e projetos práticos." />
+  <title>Kayki Marques | Desenvolvedor Web & TI</title>
+  <meta name="description" content="Portfólio de Kayki Marques Gomes, estudante de TI com foco em desenvolvimento web, suporte técnico e projetos práticos." />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <canvas id="network" aria-hidden="true"></canvas>
 
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Kayki Marques">
+  <header class="header">
+    <a class="brand" href="#hero" aria-label="Kayki Marques">
       <img src="assets/logo.png" alt="" />
-      <span>Kayki Marques</span>
+      <span>Kayki</span>
     </a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menu">
+
+    <button class="menu-button" type="button" aria-label="Abrir menu">
       <i class="fas fa-bars"></i>
     </button>
-    <nav class="nav-links" aria-label="Menu principal">
+
+    <nav class="nav" aria-label="Menu principal">
       <a href="#sobre">Sobre</a>
       <a href="#habilidades">Habilidades</a>
       <a href="#projetos">Projetos</a>
       <a href="#formacao">Formação</a>
-      <a class="nav-cta" href="#contato">Contato</a>
+      <a href="#contato" class="nav-button">Contato</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-copy reveal">
-        <span class="status-pill"><span></span> Disponível para oportunidades</span>
-        <h1>Desenvolvedor web em formação, com mão na massa em TI.</h1>
-        <p>
-          Profissional em formação com experiência prática em manutenção de computadores,
-          instalação de sistemas operacionais e desenvolvimento web. Atualmente cursando
-          Programação Web e preparando-me para expandir minhas habilidades com Python.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projetos"><i class="fas fa-layer-group"></i> Ver projetos</a>
-          <a class="btn secondary" href="#contato"><i class="fas fa-paper-plane"></i> Falar comigo</a>
-        </div>
-        <div class="hero-metrics">
-          <div><strong data-count="2">0</strong><span>projetos publicados</span></div>
-          <div><strong data-count="4">0</strong><span>áreas de estudo</span></div>
-          <div><strong data-count="100">0</strong><span>foco em evolução</span></div>
-        </div>
-      </div>
-
-      <aside class="hero-panel reveal">
-        <div class="terminal">
-          <div class="terminal-header">
-            <span></span><span></span><span></span>
-            <p>kayki.profile</p>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="saudacao">Olá, me chamo</p>
+          <h1>Kayki Marques</h1>
+          <h2>Desenvolvedor Web & Suporte Técnico</h2>
+          <p class="frase">
+            Profissional em formação com experiência prática em manutenção de computadores,
+            instalação de sistemas operacionais e desenvolvimento web. Atualmente cursando
+            Programação Web e preparando-me para expandir minhas habilidades com Python.
+          </p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn primary"><i class="fas fa-code"></i> Ver projetos</a>
+            <a href="#contato" class="btn secondary"><i class="fas fa-paper-plane"></i> Entre em contato</a>
           </div>
-          <pre><code><span class="muted">const</span> kayki = {
-  nome: <span class="string">"Kayki Marques"</span>,
-  local: <span class="string">"Ceilândia, DF"</span>,
-  stack: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"PHP"</span>],
-  aprendendo: [<span class="string">"Python"</span>, <span class="string">"SQL"</span>],
-  interesses: [
-    <span class="string">"Desenvolvimento Web"</span>,
-    <span class="string">"Suporte Técnico"</span>,
-    <span class="string">"Segurança da Info"</span>
-  ],
+          <div class="quick-info" aria-label="Resumo">
+            <span><i class="fas fa-location-dot"></i> Ceilândia, DF</span>
+            <span><i class="fas fa-circle-check"></i> Disponível para oportunidades</span>
+            <span><i class="fas fa-graduation-cap"></i> Programação Web</span>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal">
+          <div class="code-window">
+            <div class="window-top">
+              <span></span><span></span><span></span>
+              <p>kayki.js</p>
+            </div>
+            <pre><code><b>const</b> desenvolvedor = {
+  nome: <i>"Kayki Marques"</i>,
+  local: <i>"Ceilândia, DF"</i>,
+  stack: [<i>"HTML"</i>, <i>"CSS"</i>, <i>"PHP"</i>],
+  aprendendo: [<i>"Python"</i>, <i>"SQL"</i>],
+  foco: <i>"Web + Suporte Técnico"</i>,
   disponivel: true
 };</code></pre>
+          </div>
+          <div class="floating-card card-html"><i class="fab fa-html5"></i> HTML</div>
+          <div class="floating-card card-css"><i class="fab fa-css3-alt"></i> CSS</div>
+          <div class="floating-card card-php"><i class="fab fa-php"></i> PHP</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="section-label">Sobre mim</p>
+          <h3>Construindo uma carreira sólida em tecnologia.</h3>
         </div>
-        <div class="orbit-card one"><i class="fab fa-html5"></i> HTML</div>
-        <div class="orbit-card two"><i class="fab fa-css3-alt"></i> CSS</div>
-        <div class="orbit-card three"><i class="fab fa-js"></i> JS</div>
-      </aside>
-    </section>
 
-    <section class="section about" id="sobre">
-      <div class="section-heading reveal">
-        <span class="section-kicker">Sobre mim</span>
-        <h2>Perfil técnico com curiosidade real por resolver problemas.</h2>
-      </div>
-      <div class="about-grid">
-        <article class="glass-card reveal">
-          <i class="fas fa-user-graduate"></i>
-          <h3>Formação</h3>
-          <p>Ensino médio completo no CEM 04 de Ceilândia Sul. Atualmente cursando Programação Web no CEP-ET de Ceilândia, Inglês no CIL de Ceilândia e Segurança da Informação online.</p>
-        </article>
-        <article class="glass-card reveal">
-          <i class="fas fa-screwdriver-wrench"></i>
-          <h3>Experiência prática</h3>
-          <p>Experiência hands-on em manutenção de computadores e celulares, formatação, instalação de Windows e Linux em dual boot, otimização de máquinas e suporte técnico ao usuário.</p>
-        </article>
-        <article class="glass-card reveal">
-          <i class="fas fa-rocket"></i>
-          <h3>Objetivo</h3>
-          <p>Busco oportunidades para aplicar meus conhecimentos em TI, contribuindo com organização, responsabilidade e aprendizado contínuo. Em breve: curso técnico em Python.</p>
-        </article>
-      </div>
-      <div class="profile-quote reveal">
-        <i class="fas fa-quote-left"></i>
-        <p>Tenho facilidade com atendimento ao público, boa comunicação e perfil proativo para resolver problemas. Acredito que a tecnologia deve ser acessível e funcional para todos.</p>
+        <div class="about-grid">
+          <article class="info-card reveal">
+            <i class="fas fa-user-graduate"></i>
+            <h4>Formação</h4>
+            <p>Ensino médio completo no CEM 04 de Ceilândia Sul. Atualmente cursando Programação Web no CEP-ET de Ceilândia, Inglês no CIL de Ceilândia e Segurança da Informação online.</p>
+          </article>
+          <article class="info-card reveal">
+            <i class="fas fa-tools"></i>
+            <h4>Experiência prática</h4>
+            <p>Experiência hands-on em manutenção de computadores e celulares, formatação, instalação de Windows e Linux em dual boot, otimização de máquinas e suporte técnico ao usuário.</p>
+          </article>
+          <article class="info-card reveal">
+            <i class="fas fa-rocket"></i>
+            <h4>Objetivo</h4>
+            <p>Busco oportunidades para aplicar meus conhecimentos em TI, contribuindo com organização, responsabilidade e aprendizado contínuo. Em breve: curso técnico em Python.</p>
+          </article>
+        </div>
+
+        <blockquote class="quote reveal">
+          <i class="fas fa-quote-left"></i>
+          <p>Tenho facilidade com atendimento ao público, boa comunicação e perfil proativo para resolver problemas. Acredito que a tecnologia deve ser acessível e funcional para todos.</p>
+        </blockquote>
       </div>
     </section>
 
-    <section class="section skills" id="habilidades">
-      <div class="section-heading reveal">
-        <span class="section-kicker">Habilidades</span>
-        <h2>Tecnologias e competências em evolução.</h2>
-      </div>
-      <div class="skills-board reveal">
-        <div class="skill-line"><span><i class="fab fa-html5"></i> HTML5 <em>Intermediário</em></span><b style="--level: 75%"></b></div>
-        <div class="skill-line"><span><i class="fab fa-css3-alt"></i> CSS3 <em>Intermediário</em></span><b style="--level: 70%"></b></div>
-        <div class="skill-line"><span><i class="fab fa-php"></i> PHP <em>Intermediário</em></span><b style="--level: 65%"></b></div>
-        <div class="skill-line"><span><i class="fab fa-python"></i> Python <em>Em breve</em></span><b style="--level: 10%"></b></div>
-        <div class="skill-line"><span><i class="fab fa-windows"></i> Windows <em>Avançado</em></span><b style="--level: 85%"></b></div>
-        <div class="skill-line"><span><i class="fab fa-linux"></i> Linux <em>Intermediário</em></span><b style="--level: 60%"></b></div>
-        <div class="skill-line"><span><i class="fas fa-database"></i> Banco de Dados <em>Intermediário</em></span><b style="--level: 60%"></b></div>
-        <div class="skill-line"><span><i class="fas fa-network-wired"></i> Redes <em>Básico</em></span><b style="--level: 40%"></b></div>
-        <div class="skill-line"><span><i class="fab fa-js"></i> JavaScript <em>Em evolução</em></span><b style="--level: 58%"></b></div>
-      </div>
-      <div class="tag-cloud reveal" aria-label="Competências">
-        <span>Atendimento ao público</span>
-        <span>Comunicação</span>
-        <span>Proatividade</span>
-        <span>Diagnóstico de hardware</span>
-        <span>Manutenção preventiva</span>
-        <span>Formatação</span>
-        <span>Windows e Linux</span>
-        <span>GitHub Pages</span>
-        <span>Responsividade</span>
-        <span>Segurança da Informação</span>
-        <span>Inglês cursando</span>
-      </div>
-    </section>
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="section-label">Habilidades</p>
+          <h3>Tecnologias, suporte e competências práticas.</h3>
+        </div>
 
-    <section class="section projects" id="projetos">
-      <div class="section-heading reveal">
-        <span class="section-kicker">Portfólio</span>
-        <h2>Projetos em destaque.</h2>
-        <p>Dois projetos recentes com foco em usabilidade, organização e visual profissional.</p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card featured reveal">
-          <div class="project-visual redline">
-            <div class="project-browser">
-              <span></span><span></span><span></span>
-            </div>
-            <i class="fas fa-car-side"></i>
+        <div class="skills-layout">
+          <div class="skills-panel reveal">
+            <div class="skill-row"><span><i class="fab fa-html5"></i> HTML5</span><em>Intermediário</em><b style="--level: 75%"></b></div>
+            <div class="skill-row"><span><i class="fab fa-css3-alt"></i> CSS3</span><em>Intermediário</em><b style="--level: 70%"></b></div>
+            <div class="skill-row"><span><i class="fab fa-php"></i> PHP</span><em>Intermediário</em><b style="--level: 65%"></b></div>
+            <div class="skill-row"><span><i class="fab fa-python"></i> Python</span><em>Em breve</em><b style="--level: 10%"></b></div>
+            <div class="skill-row"><span><i class="fab fa-windows"></i> Windows</span><em>Avançado</em><b style="--level: 85%"></b></div>
+            <div class="skill-row"><span><i class="fab fa-linux"></i> Linux</span><em>Intermediário</em><b style="--level: 60%"></b></div>
+            <div class="skill-row"><span><i class="fas fa-database"></i> Banco de Dados</span><em>Intermediário</em><b style="--level: 60%"></b></div>
+            <div class="skill-row"><span><i class="fas fa-network-wired"></i> Redes</span><em>Básico</em><b style="--level: 40%"></b></div>
           </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
-            </div>
-            <h3>Redline Motors</h3>
-            <p>Site premium de venda de carros com hero impactante, dark mode, login simulado, favoritos, filtros, detalhes de veículos e simulação de financiamento.</p>
-            <div class="project-actions">
-              <a class="btn primary" href="https://curssedr.github.io/redline-motors-site/" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Abrir demo</a>
-              <a class="btn secondary" href="https://github.com/curssedr/redline-motors-site" target="_blank" rel="noopener"><i class="fab fa-github"></i> Código</a>
-            </div>
-          </div>
-        </article>
 
-        <article class="project-card reveal">
-          <div class="project-visual organizer">
-            <div class="task-ui">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <i class="fas fa-list-check"></i>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span>Web App</span><span>Organização</span><span>UI</span><span>Produtividade</span>
-            </div>
-            <h3>Organizador Diário</h3>
-            <p>Aplicativo web para organizar tarefas do dia, pensado para rotina, produtividade e acompanhamento simples de atividades.</p>
-            <div class="project-actions">
-              <a class="btn secondary" href="https://github.com/curssedr/organizador-diario" target="_blank" rel="noopener"><i class="fab fa-github"></i> Repositório</a>
-            </div>
-            <small>Repositório privado no GitHub; pronto para receber link de demo quando o Pages for ativado.</small>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section timeline-section" id="formacao">
-      <div class="section-heading reveal">
-        <span class="section-kicker">Trajetória</span>
-        <h2>Formação e próximos passos.</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <span>Concluído</span>
-          <h3>Ensino Médio Completo</h3>
-          <p><strong>CEM 04 de Ceilândia Sul.</strong> Formação básica completa com foco em desenvolvimento acadêmico.</p>
-        </article>
-        <article class="timeline-item reveal">
-          <span>Cursando</span>
-          <h3>Programação Web</h3>
-          <p><strong>CEP-ET de Ceilândia.</strong> Desenvolvimento web com HTML, CSS, PHP e banco de dados. Projetos práticos e metodologia hands-on.</p>
-        </article>
-        <article class="timeline-item reveal">
-          <span>Cursando</span>
-          <h3>Curso de Inglês</h3>
-          <p><strong>Centro Interescolar de Línguas de Ceilândia (CIL).</strong> Aprimoramento da língua inglesa para leitura de documentação técnica e comunicação profissional.</p>
-        </article>
-        <article class="timeline-item reveal">
-          <span>Cursando</span>
-          <h3>Segurança da Informação</h3>
-          <p><strong>Curso online.</strong> Fundamentos de cibersegurança, boas práticas de proteção de dados e prevenção a ataques.</p>
-        </article>
-        <article class="timeline-item reveal">
-          <span>Em breve</span>
-          <h3>Curso Técnico em Python</h3>
-          <p><strong>Instituição a definir.</strong> Próximo passo na carreira: aprofundamento em Python, desenvolvimento de APIs e automação.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact" id="contato">
-      <div class="contact-card reveal">
-        <div>
-          <span class="section-kicker">Contato</span>
-          <h2>Vamos conversar sobre oportunidades?</h2>
-          <p>Estou aberto a projetos, aprendizado prático, suporte técnico e vagas de entrada em tecnologia.</p>
-          <div class="contact-info">
-            <span><i class="fas fa-map-marker-alt"></i> Ceilândia Sul, DF - 72220-081</span>
-            <span><i class="fas fa-phone-alt"></i> (61) 99272-9256</span>
-            <span><i class="fas fa-envelope"></i> kayki@email.com</span>
+          <div class="skill-cloud reveal">
+            <span>Comunicação</span>
+            <span>Atendimento ao público</span>
+            <span>Proatividade</span>
+            <span>Diagnóstico de hardware</span>
+            <span>Manutenção preventiva</span>
+            <span>Formatação</span>
+            <span>Segurança da Informação</span>
+            <span>Inglês cursando</span>
+            <span>GitHub Pages</span>
+            <span>Responsividade</span>
           </div>
         </div>
-        <div class="contact-actions">
-          <a class="btn primary" href="mailto:kayki@email.com"><i class="fas fa-envelope"></i> Enviar e-mail</a>
-          <a class="btn secondary" href="https://github.com/curssedr" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-          <a class="btn secondary" href="https://wa.me/5561992729256" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="section-label">Projetos</p>
+          <h3>Projetos recentes adicionados ao portfólio.</h3>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview redline">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <i class="fas fa-car-side"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+              </div>
+              <h4>Redline Motors</h4>
+              <p>Site premium de vendas de carros com visual moderno, dark mode, login simulado, favoritos, filtros, página de detalhes e simulação de financiamento.</p>
+              <div class="project-links">
+                <a href="https://curssedr.github.io/redline-motors-site/" target="_blank" rel="noopener" class="btn primary"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
+                <a href="https://github.com/curssedr/redline-motors-site" target="_blank" rel="noopener" class="btn secondary"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview organizer">
+              <div class="task-lines"><span></span><span></span><span></span></div>
+              <i class="fas fa-list-check"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>Web App</span><span>Produtividade</span><span>Organização</span><span>UI</span>
+              </div>
+              <h4>Organizador Diário</h4>
+              <p>Aplicativo web de organização diária para acompanhar tarefas, estruturar rotina e facilitar o controle de atividades do dia a dia.</p>
+              <div class="project-links">
+                <a href="https://github.com/curssedr/organizador-diario" target="_blank" rel="noopener" class="btn secondary"><i class="fab fa-github"></i> Repositório</a>
+              </div>
+              <small>Repositório privado no GitHub; pronto para receber uma demo pública quando você quiser ativar o Pages.</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="section-label">Trajetória</p>
+          <h3>Formação e cursos.</h3>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>Concluído</span>
+            <h4>Ensino Médio Completo</h4>
+            <p><strong>CEM 04 de Ceilândia Sul.</strong> Formação básica completa com foco em desenvolvimento acadêmico.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Cursando</span>
+            <h4>Programação Web</h4>
+            <p><strong>CEP-ET de Ceilândia.</strong> Desenvolvimento web com HTML, CSS, PHP e banco de dados. Projetos práticos e metodologia hands-on.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Cursando</span>
+            <h4>Curso de Inglês</h4>
+            <p><strong>Centro Interescolar de Línguas de Ceilândia (CIL).</strong> Aprimoramento da língua inglesa para leitura de documentação técnica e comunicação profissional.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Cursando</span>
+            <h4>Segurança da Informação</h4>
+            <p><strong>Curso online.</strong> Fundamentos de cibersegurança, boas práticas de proteção de dados e prevenção a ataques.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Em breve</span>
+            <h4>Curso Técnico em Python</h4>
+            <p><strong>Instituição a definir.</strong> Próximo passo na carreira: aprofundamento em Python, desenvolvimento de APIs e automação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="section-label">Contato</p>
+            <h3>Quer trabalhar comigo ou tem alguma dúvida?</h3>
+            <p>Me chama para oportunidades, projetos, suporte técnico ou conversas sobre tecnologia.</p>
+            <div class="contact-list">
+              <span><i class="fas fa-map-marker-alt"></i> Ceilândia Sul, DF - 72220-081</span>
+              <span><i class="fas fa-phone-alt"></i> (61) 99272-9256</span>
+              <span><i class="fas fa-envelope"></i> kayki@email.com</span>
+            </div>
+          </div>
+          <div class="contact-buttons">
+            <a href="mailto:kayki@email.com" class="btn primary"><i class="fas fa-envelope"></i> E-mail</a>
+            <a href="https://wa.me/5561992729256" target="_blank" rel="noopener" class="btn secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://github.com/curssedr" target="_blank" rel="noopener" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Kayki Marques. Portfólio desenvolvido com HTML, CSS e JavaScript.</p>
-    <a href="#inicio">Voltar ao topo</a>
+    <div class="container footer-content">
+      <p>© 2026 Kayki Marques Gomes. Todos os direitos reservados.</p>
+      <a href="#hero">Voltar ao topo</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
