@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayki Marques | Portfólio Web & TI</title>
+  <meta name="description" content="Portfólio de Kayki Marques, estudante de TI com foco em desenvolvimento web, suporte técnico e projetos práticos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Kayki Marques">
+      <img src="assets/logo.png" alt="" />
+      <span>Kayki Marques</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links" aria-label="Menu principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
+      <a class="nav-cta" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <span class="status-pill"><span></span> Disponível para oportunidades</span>
+        <h1>Desenvolvedor web em formação, com mão na massa em TI.</h1>
+        <p>
+          Crio interfaces modernas, organizo experiências digitais e trago uma base prática
+          de suporte técnico, manutenção, sistemas operacionais e atendimento ao usuário.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projetos"><i class="fas fa-layer-group"></i> Ver projetos</a>
+          <a class="btn secondary" href="#contato"><i class="fas fa-paper-plane"></i> Falar comigo</a>
+        </div>
+        <div class="hero-metrics">
+          <div><strong data-count="2">0</strong><span>projetos publicados</span></div>
+          <div><strong data-count="4">0</strong><span>áreas de estudo</span></div>
+          <div><strong data-count="100">0</strong><span>foco em evolução</span></div>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal">
+        <div class="terminal">
+          <div class="terminal-header">
+            <span></span><span></span><span></span>
+            <p>kayki.profile</p>
+          </div>
+          <pre><code><span class="muted">const</span> kayki = {
+  nome: <span class="string">"Kayki Marques"</span>,
+  local: <span class="string">"Ceilândia, DF"</span>,
+  stack: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"PHP"</span>],
+  foco: <span class="string">"Web + Suporte Técnico"</span>,
+  postura: <span class="string">"curioso, prático e responsável"</span>
+};</code></pre>
+        </div>
+        <div class="orbit-card one"><i class="fab fa-html5"></i> HTML</div>
+        <div class="orbit-card two"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="orbit-card three"><i class="fab fa-js"></i> JS</div>
+      </aside>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Sobre mim</span>
+        <h2>Perfil técnico com curiosidade real por resolver problemas.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card reveal">
+          <i class="fas fa-code"></i>
+          <h3>Desenvolvimento web</h3>
+          <p>Construção de páginas responsivas com HTML, CSS, JavaScript e PHP, com atenção ao visual e à experiência.</p>
+        </article>
+        <article class="glass-card reveal">
+          <i class="fas fa-screwdriver-wrench"></i>
+          <h3>Suporte técnico</h3>
+          <p>Manutenção de computadores, instalação de Windows e Linux, otimização de máquinas e atendimento ao usuário.</p>
+        </article>
+        <article class="glass-card reveal">
+          <i class="fas fa-shield-halved"></i>
+          <h3>Segurança e dados</h3>
+          <p>Estudo de segurança da informação, banco de dados e boas práticas para sistemas mais confiáveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="habilidades">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Habilidades</span>
+        <h2>Tecnologias e competências em evolução.</h2>
+      </div>
+      <div class="skills-board reveal">
+        <div class="skill-line"><span><i class="fab fa-html5"></i> HTML5</span><b style="--level: 82%"></b></div>
+        <div class="skill-line"><span><i class="fab fa-css3-alt"></i> CSS3</span><b style="--level: 78%"></b></div>
+        <div class="skill-line"><span><i class="fab fa-js"></i> JavaScript</span><b style="--level: 58%"></b></div>
+        <div class="skill-line"><span><i class="fab fa-php"></i> PHP</span><b style="--level: 65%"></b></div>
+        <div class="skill-line"><span><i class="fab fa-linux"></i> Linux</span><b style="--level: 60%"></b></div>
+        <div class="skill-line"><span><i class="fas fa-database"></i> SQL</span><b style="--level: 55%"></b></div>
+      </div>
+      <div class="tag-cloud reveal" aria-label="Competências">
+        <span>Atendimento ao público</span>
+        <span>Comunicação</span>
+        <span>Diagnóstico de hardware</span>
+        <span>Formatação</span>
+        <span>GitHub Pages</span>
+        <span>Responsividade</span>
+        <span>UI moderna</span>
+        <span>Aprendizado contínuo</span>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Portfólio</span>
+        <h2>Projetos em destaque.</h2>
+        <p>Dois projetos recentes com foco em usabilidade, organização e visual profissional.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal">
+          <div class="project-visual redline">
+            <div class="project-browser">
+              <span></span><span></span><span></span>
+            </div>
+            <i class="fas fa-car-side"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+            </div>
+            <h3>Redline Motors</h3>
+            <p>Site premium de venda de carros com hero impactante, dark mode, login simulado, favoritos, filtros, detalhes de veículos e simulação de financiamento.</p>
+            <div class="project-actions">
+              <a class="btn primary" href="https://curssedr.github.io/redline-motors-site/" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Abrir demo</a>
+              <a class="btn secondary" href="https://github.com/curssedr/redline-motors-site" target="_blank" rel="noopener"><i class="fab fa-github"></i> Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual organizer">
+            <div class="task-ui">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <i class="fas fa-list-check"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>Web App</span><span>Organização</span><span>UI</span><span>Produtividade</span>
+            </div>
+            <h3>Organizador Diário</h3>
+            <p>Aplicativo web para organizar tarefas do dia, pensado para rotina, produtividade e acompanhamento simples de atividades.</p>
+            <div class="project-actions">
+              <a class="btn secondary" href="https://github.com/curssedr/organizador-diario" target="_blank" rel="noopener"><i class="fab fa-github"></i> Repositório</a>
+            </div>
+            <small>Repositório privado no GitHub; pronto para receber link de demo quando o Pages for ativado.</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="formacao">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Trajetória</span>
+        <h2>Formação e próximos passos.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>Concluído</span>
+          <h3>Ensino Médio Completo</h3>
+          <p>CEM 04 de Ceilândia Sul.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Cursando</span>
+          <h3>Programação Web</h3>
+          <p>HTML, CSS, PHP, banco de dados e projetos práticos no CEP-ET de Ceilândia.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Cursando</span>
+          <h3>Inglês e Segurança da Informação</h3>
+          <p>Estudos voltados para documentação técnica, boas práticas e proteção de dados.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Próximo passo</span>
+          <h3>Python</h3>
+          <p>Aprofundamento em automação, APIs e lógica de programação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-kicker">Contato</span>
+          <h2>Vamos conversar sobre oportunidades?</h2>
+          <p>Estou aberto a projetos, aprendizado prático, suporte técnico e vagas de entrada em tecnologia.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:kayki@email.com"><i class="fas fa-envelope"></i> Enviar e-mail</a>
+          <a class="btn secondary" href="https://github.com/curssedr" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          <a class="btn secondary" href="https://wa.me/5561992729256" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Kayki Marques. Portfólio desenvolvido com HTML, CSS e JavaScript.</p>
+    <a href="#inicio">Voltar ao topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
